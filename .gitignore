@@ -1,0 +1,14 @@
+.space/
+chat.py
+space-cli.sh
+Spacefile
+venv/
+.cache/
+poetry.lock
+pyproject.toml
+*/__pycache__/
+.config/
+.upm/
+.replit
+replit.nix
+git/
