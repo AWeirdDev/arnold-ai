@@ -11,4 +11,5 @@ pyproject.toml
 .upm/
 .replit
 replit.nix
-git/
+.git/
+.breakpoints
