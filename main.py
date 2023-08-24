@@ -1,6 +1,7 @@
 # requires db:
 # LAST_SONG = 0
 
+import asyncio
 import json
 import os
 from threading import Thread
@@ -153,12 +154,6 @@ async def ask(
             async with client.stream(
                 'POST', 
                 "https://gpt4free.awdev.repl.co/chat",
-                headers={
-                    "User-Agent": ua.random,
-                    "Origin": "https://gpt4.xunika.uk",
-                    "Referer": "https://gpt4.xunika.uk",
-                    "Authorization": "Bearer nk-chatgptorguk"
-                },
                 json={
                     "frequency_penalty": 0,
                     "messages": [
