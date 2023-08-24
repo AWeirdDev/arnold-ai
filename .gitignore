@@ -13,3 +13,4 @@ pyproject.toml
 replit.nix
 .git/
 .breakpoints
+__pycache__/
