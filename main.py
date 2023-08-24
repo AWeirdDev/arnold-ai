@@ -9,7 +9,6 @@ import discord
 import flask
 import httpx
 import yt_dlp as youtube_dl
-from fake_useragent import UserAgent
 from replit import db
 
 from cooldown import NewCooldown
@@ -19,7 +18,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 cooldown = NewCooldown(2, 5)
 app = flask.Flask(__name__)
-ua = UserAgent()
 discord.opus.load_opus('opus/libopus.so')
 
 @app.route('/')

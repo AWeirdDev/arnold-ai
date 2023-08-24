@@ -1,3 +1,5 @@
 flask
 py-cord
 httpx
+youtube-dlp
+replit
